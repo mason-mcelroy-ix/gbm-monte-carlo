@@ -2,7 +2,26 @@
 
 We simulate several possible stock price paths using the standard Geometric Brownian Motion model, then analyze the distribution of final stock prices.
 
-The goal of this project is to built intuition with the fundementals of quantitative finance, and provide a foundation for future work in my portfolio.
+The goal of this project is to built intuition with the fundamentals of quantitative finance, and provide a foundation for future work in my portfolio.
+
+---
+
+## Setup
+
+The recommended method to run this program is through an Anaconda environment:
+
+1. Install Anaconda (Python 3.14 recommended)
+2. Clone this repository
+3. Create the Conda environment from the environment.yml as follows:
+```
+conda env create ---file environment.yml
+conda activate quant_notebooks
+```
+4. Run the notebook through JupyterLab
+```
+jupyter lab
+```
+5. Run the notebook as normal in your browser of choice
 
 ---
 
@@ -16,13 +35,13 @@ where:
 - $S_t$ is the stock price
 - $\mu$ is the expected return ("drift")
 - $\sigma$ is the volatility
-- $dW_t$ is a "brownian motion increment" known as a Wiener process
+- $dW_t$ is a "Brownian motion increment" known as a Wiener process
 
 ---
 
 ## Simulation
 
-We can solve the stochastic differential equation equation for the final price in terms of the Wiener process increments:
+We can solve the stochastic differential equation for the final price in terms of the Wiener process increments:
 
 $S_t = S_{t - \Delta t} \exp((\mu - \frac{1}{2}\sigma^2) dt + \sigma dW_t)$
 

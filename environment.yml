@@ -1,4 +1,4 @@
-name: quant_exploration
+name: quant_notebooks
 channels:
   - defaults
 dependencies:
@@ -6,4 +6,3 @@ dependencies:
   - numpy
   - matplotlib
   - pandas
-prefix: C:\Users\masro\anaconda3\envs\quant_exploration
