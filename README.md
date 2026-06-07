@@ -21,7 +21,7 @@ conda activate quant_notebooks
 ```
 jupyter lab
 ```
-5. Run the notebook as normal in your browser of choice
+5. Run `notebooks/gbm_simulation.ipynb` through JupyterLab in your browser of choice
 
 ---
 
